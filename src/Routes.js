@@ -1,10 +1,10 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
-import NotFound from "./Components/NotFound";
 import App from "./App";
+import NotFound from "./Components/NotFound";
 import AdminDashboard from "./Pages/Admin/AdminDashboard";
 import UserDashboard from "./Pages/User/UserDashboard";
-import CancelBooking from "./Pages/User/CancelBooking";
-import EventBooking from "./Pages/User/EventBooking";
+import BookedEvent from "./Pages/User/BookedEvent";
+import Events from "./Pages/User/Events";
 import ManageUser from "./Pages/Admin/MangeUser";
 import ManageEvents from "./Pages/Admin/MangeEvents";
 import AdmEvents from "./Pages/Admin/AdmEvents";
@@ -19,25 +19,25 @@ export const router = createBrowserRouter([
         element: <NotFound />,
       },
       {
-        path: "user",
+        // path: "user",
         element: <UserDashboard />,
         children: [
           {
             index: true,
-            element: <Navigate to="eventbook" replace />,
+            element: <Navigate to="events" replace />,
           },
           {
-            path: "eventbook",
-            element: <EventBooking />,
+            path: "events",
+            element: <Events />,
           },
           {
-            path: "cancelbook",
-            element: <CancelBooking />,
+            path: "bookedevent",
+            element: <BookedEvent />,
           },
         ],
       },
       {
-        path: "admin",
+        // path: "admin",
         element: <AdminDashboard />,
         children: [
           {

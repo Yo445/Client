@@ -293,21 +293,21 @@ h1 span {
   font-weight: normal;
 }
 
-.movieTitle, .ticketHolderName, .seatNumber, .showTime {
+.eventTitle, .ticketHolderName, .seatNumber, .showTime {
   text-transform: uppercase;
   font-weight: normal;
 }
-.movieTitle h2, .ticketHolderName h2, .seatNumber h2, .showTime h2 {
+.eventTitle h2, .ticketHolderName h2, .seatNumber h2, .showTime h2 {
   font-size: 0.9em;
   color: #525252;
   margin: 0;
 }
-.movieTitle span, .ticketHolderName span, .seatNumber span, .showTime span {
+.eventTitle span, .ticketHolderName span, .seatNumber span, .showTime span {
   font-size: 0.7em;
   color: #a2aeae;
 }
 
-.movieTitle {
+.eventTitle {
   margin: 2em 0 0 0;
 }
 

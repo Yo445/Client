@@ -5,7 +5,7 @@ export default function EventBooking() {
     return (
         <div>
             <div className="user-dashboard__projects-section-header">
-                <p>Events</p>
+                <p>booked events and cancel booking </p>
             </div>
         </div>
     )

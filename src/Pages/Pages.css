@@ -30,7 +30,7 @@ body {
 .user-dashboard__icon {
   width: 36px;
   height: 36px;
-  font-size: 38px;
+  /* font-size: 38px; */
   color: #c08610;
   background: var(--link-color);
   border-radius: 50%;
@@ -99,10 +99,10 @@ body {
 
 .user-dashboard__projects-section-header {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  /* align-items: center;
   text-align: center;
-  margin: auto;
+  margin: auto; */
 }
 
 .user-dashboard__projects-section-header p {
@@ -184,10 +184,212 @@ body {
 }
 
 
-/*----------------------- Loader.css -----------------------*/
+/*----------------------- MangeUser.css -----------------------*/
+.manage-user-container {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-/*----------------------- Loader.css -----------------------*/
+.user-dashboard__projects-section-header p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
+.manage-user-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.manage-user-input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.manage-user-input:focus {
+  border-color: #c08610;
+  outline: none;
+}
+
+.manage-user-button {
+  padding: 10px 20px;
+  background-color: #c08610;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.manage-user-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.manage-user-button:not(:disabled):hover {
+  background-color: #a76f08;
+}
+
+.user-list {
+  margin-top: 20px;
+}
+
+.user-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.edit-button, .delete-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button {
+  background-color: #f0ad4e;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.edit-button:hover {
+  background-color: #ec971f;
+}
+
+.delete-button {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+.delete-button:hover {
+  background-color: #c9302c;
+}
+
+/*----------------------- ManageEvents.css -----------------------*/
+
+/* Manage Events Container */
+.manage-events-container {
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  height: 63vh;
+}
+
+.user-dashboard__projects-section-header p {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Manage Events Form */
+.manage-events-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.manage-events-input {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border 0.3s ease;
+}
+
+.manage-events-input:focus {
+  border: 1px solid #c08610;
+  outline: none;
+}
+
+.manage-events-button {
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #c08610;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.manage-events-button:hover {
+  background-color: #835e15;
+}
+
+/* Event List */
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.event-list-item {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.event-list-item:hover {
+  background-color: #f1f1f1;
+}
+
+.edit-button, .delete-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-button {
+  background-color: #28a745;
+}
+
+.edit-button:hover {
+  background-color: #218838;
+}
+
+.delete-button {
+  background-color: #dc3545;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
 /*----------------------- Loader.css -----------------------*/
 
 /*----------------------- Loader.css -----------------------*/

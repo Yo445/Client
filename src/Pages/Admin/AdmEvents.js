@@ -8,7 +8,7 @@ export default function AdmEvents() {
   return (
     <div>
       <div className="user-dashboard__projects-section-header">
-            <p>Events</p>
+            <p>Events booked by user</p>
       </div>
       <Box display="flex" justifyContent="center" flexWrap="wrap">
               <Ticket />
